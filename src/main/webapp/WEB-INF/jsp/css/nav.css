@@ -1,0 +1,38 @@
+
+a{
+text-decoration:none;
+color:white;
+font-size:20px;	
+}
+#container
+{
+height:80px;
+width:100%;
+background-color:gray;
+top:0;
+position:fixed;	
+}
+#header{
+	top:0;
+	height: 50px;
+	
+}
+#header ul li{
+	       
+	       display:block;
+			height: 70px;
+			line-height:70px;
+			padding-left: 100px;
+			
+			float: left;
+		    text-align:center;
+			list-style-type: none;
+}
+#home{
+	padding-left: 270px;
+}
+#logo{
+	font-size:25px;
+	color:green;
+	
+}

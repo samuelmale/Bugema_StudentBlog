@@ -1,0 +1,17 @@
+#footer1{
+	bottom:0px;
+background-color:#E6E6E6;
+width:100%;
+height:40px;
+list-style:none;
+display:inline-block;
+text-align:center;
+float:left;
+font-size:20px;
+line-height:50px;
+position:fixed;
+margin-top:100px;
+margin-left:0px;
+padding-left:0px;
+color:#58FA58;
+}
