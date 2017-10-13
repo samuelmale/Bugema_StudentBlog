@@ -26,11 +26,13 @@
 <div id="userIcon" >
 <img class="h"alt="User Icon" src="${pageContext.request.contextPath}/resources/images/user.jpg"/ height="100px">
 </div>
+<div id="User-info">
 <ul>
 <li>User's Name</li>
 <li>Ask Question</li>
 <li>Answer Questions</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -47,7 +49,7 @@
    <div id="post">
    
    
-   <h3><b><i>${post.title }</i></b></h3>
+   <h3><b id="title">${post.title }</b></h3>
 <article>  <c:out value = "${post.body}"/></article>
 <br><br>
 </div>

@@ -18,22 +18,28 @@ function validateForm()
   var form= document.getElementById("registerForm");
   var firstName=form.userName.value;
   var lastName=form.lastName.value;
-  check = comfirmPassWord();
-  if(!check)
-  {
-	alert("Passwords don't match");  
-  }
+  
 	
 	if(firstName!=null&&firstName!=""&&lastName!=null&&firstName!=""&&password!=null&&password!="")
 		{
 		check=true;
-		return check;
+		//return true;
 		}
 	else {
 			alert("Cann't accept empty fields!");
-			return check;
+			check=false;
 		
 	}
+	if(check){
+		check = comfirmPassWord();
+		  if(!check)
+		  {
+			alert("Passwords don't match");
+			check=false;
+			
+		  }
+	}
+return check;
 	
 	
 }
@@ -62,7 +68,7 @@ return flag;
 <div id="body3">
 <div id="form-container">
 <div id="form">
-<form name="registerForm" action="" >
+<form name="registerForm" action="" method="post">
 <i id="reg-head"><b>Login Here</i></b><br><br>
 <label id="formlabel">Username:</label><input type="text" class="text" placeHolder="Enter your Name" required><br><br>
 <label id="formlabel">Password:</label><input type="text" class="text" placeHolder="Enter Password" required><br><br>

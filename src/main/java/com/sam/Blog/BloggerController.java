@@ -40,7 +40,7 @@ public class BloggerController {
 	
 	
 	
-		return "";
+		return "registration";
 	}
 	@RequestMapping("/login")
 	String logIn()
