@@ -1,16 +1,16 @@
 package com.sam.Blog;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.hibernate.SessionFactory;
+//import org.hibernate.SessionFactory;
 
 
 
 @Repository
 public class DAO_IMP implements DAO_SERVICE{
 	
-	@Autowired
-	SessionFactory sessionFac;
+	//@Autowired
+	//SessionFactory sessionFac;
 
 	public void saveUser(User u) {
 		
